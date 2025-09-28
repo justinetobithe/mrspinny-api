@@ -27,7 +27,7 @@
                     <tr>
                         <td style="padding:8px 28px 0;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;color:#111;">
                             <p style="margin:0 0 16px;font-size:18px;line-height:1.5;">
-                                Hi {{first_name}}, 🎯
+                                Hi {{ $first_name }}, 🎯
                             </p>
                             <p style="margin:0 0 16px;font-size:16px;line-height:1.6;color:#30343b;">
                                 The Lucky Wheel is waiting — don’t miss your spin! For a short time only, here’s what’s inside:
@@ -45,10 +45,10 @@
 
                     <tr>
                         <td align="center" style="padding:0 28px 8px;">
-                            <a href="{{cta_url}}" target="_blank"
+                            <a href="{{ $cta_url }}" target="_blank"
                                 style="display:inline-block;background:#2e64ff;color:#ffffff;text-decoration:none;
-                        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-                        font-weight:800;font-size:18px;line-height:1;padding:16px 24px;border-radius:10px;">
+                               font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+                               font-weight:800;font-size:18px;line-height:1;padding:16px 24px;border-radius:10px;">
                                 Spin Your Chance Now
                             </a>
                         </td>
@@ -75,7 +75,7 @@
                                             <div>📞 <a href="tel:+40755967591" style="color:#1f2937;text-decoration:none;">+40 755 967 591</a></div>
                                             <div>✉️ <a href="mailto:info@mrspinny.com" style="color:#1f2937;text-decoration:none;">info@mrspinny.com</a></div>
                                             <div>🌐 <a href="https://www.mrspinny.com" target="_blank" style="color:#1f2937;text-decoration:none;">www.mrspinny.com</a></div>
-                                            <div>💬 <a href="{{whatsapp_url}}" target="_blank" style="color:#1f2937;text-decoration:none;">WhatsApp</a></div>
+                                            <div>💬 <a href="{{ $whatsapp_url }}" target="_blank" style="color:#1f2937;text-decoration:none;">WhatsApp</a></div>
                                         </div>
                                     </td>
                                 </tr>
@@ -87,15 +87,15 @@
                         <td style="padding:16px 28px 28px;background:#f8fafc;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;color:#64748b;font-size:12px;line-height:1.6;border-top:1px solid #eef2f7;">
                             <div>18+ only. Please play responsibly. Offers subject to terms and local rules.</div>
                             <div style="margin-top:6px;">
-                                <a href="{{unsubscribe_url}}" target="_blank" style="color:#64748b;text-decoration:underline;">Unsubscribe</a> •
-                                <a href="{{preferences_url}}" target="_blank" style="color:#64748b;text-decoration:underline;">Email preferences</a>
+                                <a href="{{ $unsubscribe_url }}" target="_blank" style="color:#64748b;text-decoration:underline;">Unsubscribe</a> •
+                                <a href="{{ $preferences_url }}" target="_blank" style="color:#64748b;text-decoration:underline;">Email preferences</a>
                             </div>
                         </td>
                     </tr>
                 </table>
 
                 <div style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;color:#9aa4b2;font-size:12px;line-height:1.6;padding:12px 0;">
-                    © {{year}} MrSpinny. All rights reserved.
+                    © {{ $year }} MrSpinny. All rights reserved.
                 </div>
             </td>
         </tr>
